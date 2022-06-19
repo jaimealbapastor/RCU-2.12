@@ -39,10 +39,10 @@ class HighlighterPen(QPen):
         color = QSettings().value('pane/notebooks/export_pdf_highlightink')
         super(type(self), self).setColor(color)
 
-    def setColor(self, color):
-        # Highlighter color is not adjustable like the others (using
-        # the color index)
-        return
+    # def setColor(self, color):
+    #     # Highlighter color is not adjustable like the others (using
+    #     # the color index)
+    #     return
     
     def paint_stroke(self, painter, stroke):
         path = QPainterPath()

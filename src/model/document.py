@@ -1504,11 +1504,18 @@ class DocumentPageLayer:
         self.name = name
         self.index = index
         self.pencil_textures = pencil_textures
-    # TODO ERROR DE COLORES
+    
         self.colors = [
             QSettings().value('pane/notebooks/export_pdf_blackink'),
             QSettings().value('pane/notebooks/export_pdf_grayink'),
-            QSettings().value('pane/notebooks/export_pdf_whiteink')
+            QSettings().value('pane/notebooks/export_pdf_whiteink'),
+            
+            QSettings().value('pane/notebooks/export_pdf_highlight_yellowink'),
+            QSettings().value('pane/notebooks/export_pdf_highlight_greenink'),
+            QSettings().value('pane/notebooks/export_pdf_highlight_pinkink'),
+            
+            QSettings().value('pane/notebooks/export_pdf_blueink'),
+            QSettings().value('pane/notebooks/export_pdf_redink')
         ]
 
         # Set this from the calling func
@@ -1655,6 +1662,7 @@ class DocumentPageLayer:
                 log.error("Unknown pen code %d" % pen)
                 penclass = GenericPen
 
+            
             qpen = penclass(pencil_textures=self.pencil_textures,
                             vector=vector,
                             layer=self)
@@ -1662,6 +1670,8 @@ class DocumentPageLayer:
 
             # Do the needful
             qpen.paint_stroke(painter, stroke)
+            
+
 
     def render_to_painter(self, painter, vector):
         # Transform according to the document metadata
