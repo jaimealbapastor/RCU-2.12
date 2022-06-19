@@ -1,0 +1,36 @@
+reMarkable Package Sample
+=========================
+This directory contains scripts to build a sample package in the RMPKG
+format. This is a self-contained, runnable script that implements:
+  * Install itself (--install)
+  * Uninstall itself (--uninstall)
+  * List its manifest of touched files (--manifest)
+  * Print its own information (--info)
+
+The manifest of touched files is used by RCU to determine if two
+packages conflict.
+
+The package information is useful for anyone wanting to know what it
+does. RCU uses this in tooltip hover text in the Software Pane.
+
+To build this sample application, run `make`.
+
+
+Copyright
+=========
+RCU is a synchronization tool for the reMarkable Tablet.
+Copyright (C) 2020  Davis Remmel
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public
+License along with this program.  If not, see
+<https://www.gnu.org/licenses/>.

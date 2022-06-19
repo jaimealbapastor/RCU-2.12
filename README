@@ -1,0 +1,41 @@
+reMarkable Connection Utility (RCU)
+===================================
+RCU is a desktop client for all-in-one offline management of reMarkable
+e-paper tablet(s). Users may create and restore full backups, take
+screenshots, and manage notebooks, templates, wallpaper, and third-party
+software. It ensures the user's data is completely in their control,
+unshackled from the manufacturer's proprietary cloud service.
+
+RCU is licensed under the GNU AGPLv3 (or later).
+
+The RCU User Manual is the primary source of documentation. All the 
+files in the manual/ directory, and the text itself, are CC-BY-SA 4.0.
+
+reMarkable(R) is a registered tradebark of reMarkable AS. RCU is not 
+affiliated with, or endorsed by, reMarkable AS. The use of “reMarkable” 
+in this work refers to the company’s e-paper tablet products.
+
+
+Building Documetation
+=====================
+The entire project documentation can be found in manual/manual.tex. You
+can generate the manual/manual.pdf file by running `make doc`.
+
+
+Copyright
+=========
+RCU is a synchronization tool for the reMarkable Tablet.
+Copyright (C) 2020  Davis Remmel
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.

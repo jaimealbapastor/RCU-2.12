@@ -1,0 +1,11 @@
+# PySide2 is specified in optionals.txt because it must be
+# installed through the port or pkg system on FreeBSD.
+
+paramiko>=2.7.1
+PyInstaller==4.1
+Pillow>=8.0.1
+certifi
+
+# Below are required for Python 3.6
+appdirs>=1.4.4
+packaging>=20.8

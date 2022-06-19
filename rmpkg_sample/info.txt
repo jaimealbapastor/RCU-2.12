@@ -1,0 +1,14 @@
+MyPackage
+
+This is a sample application used to show other developers how to bundle
+their applications inside the RMPKG format. This information section is
+meant to include a Title on the first line, followed by a blank space,
+then a Description through the rest of the document. Think of it like a
+git commit message.
+
+Perhaps it is beneficial to include information about the license of
+your software, and a link to the project's website.
+
+Version: 0.1
+License: AGPLv3+
+Website: http://www.davisr.me/projects/rcu/
