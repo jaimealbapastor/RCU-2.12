@@ -510,7 +510,7 @@ class Document:
                     tmpfile.unlink()
                     break
             if not found:
-                # TODO
+                # TODO tid is empty
                 log.error('Unable to add template to archive: {}'.format(tid))
         outtar.close()
 
@@ -1389,12 +1389,13 @@ class DocumentPage:
         self.highlightspath = Path(
             archivepath / Path(self.document.uuid + '.highlights')
             / Path(self.uuid + '.json'))
-        if self.highlightspath.exists():
+        if False and self.highlightspath.exists():      # remove 'False and'
             with open(self.highlightspath, 'r') as f:
-                jdict = json.load(f)
+                jdict = json.load(f)                    # TODO issue decoding utf-16
                 if 'highlights' in jdict:
                     self.highlights = jdict['highlights']
                 f.close()
+    
 
         # Try to load template
         self.template = None
