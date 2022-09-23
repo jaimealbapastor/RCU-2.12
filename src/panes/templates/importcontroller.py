@@ -171,6 +171,7 @@ class TemplateImporter:
         self.icons_loaded = True
         log.info('template icons finished loading')
 
+    # TODO reparar
     def upload_template(self, filepath):
         # This method handles all template imports. It is activated
         # by the Template Pane controller.
